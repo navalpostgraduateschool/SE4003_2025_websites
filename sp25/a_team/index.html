@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>PixelRunner Project</title>
+  <style>
+    body {
+      background-color: #121212;
+      color: #ffffff;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    header img {
+      width: 100%;
+      height: auto;
+      max-height: auto;
+      object-fit: contain;
+      display: block;
+    }
+
+    nav {
+      background-color: #1f1f1f;
+      padding: 10px 0;
+      text-align: center;
+      position: sticky;
+      top: 0;
+      z-index: 999;
+    }
+
+    nav a {
+      color: #ffffff;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #f9ca24;
+    }
+
+    section {
+      margin: 40px auto;
+      padding: 40px 20px;
+      max-width: 1000px;
+      background-color: #1e1e60; /* Dark blue */
+      border: 5px solid #3a1e5f; /* Dark purple border */
+      box-sizing: border-box;
+      overflow: auto;
+    }
+
+    section h2,
+    section p,
+    section ul,
+    section li {
+      color: #ffffff;
+    }
+
+    img.section-image-left,
+    img.section-image-right {
+      max-width: 300px;
+      border: 3px solid white;
+    }
+
+    img.section-image-left {
+      float: left;
+      margin: 0 20px 20px 0;
+    }
+
+    img.section-image-right {
+      float: right;
+      margin: 0 0 20px 20px;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    .readme-link a {
+      color: #00e6ff;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    .readme-link a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <img src="https://tinypic.host/images/2025/06/09/pixelrunner.png" alt="PixelRunner Banner" />
+  </header>
+
+  <nav>
+    <a href="#overview">Overview</a>
+    <a href="#features">Key Features</a>
+    <a href="#components">Required Components</a>
+    <a href="#team">Team Members</a>
+  </nav>
+
+  <section id="overview">
+    <img src="https://tinypic.host/images/2025/06/09/projectoverview.png" alt="Project Overview" class="section-image-left" />
+    <p>
+      PixelRunner is a retro gaming setup that transforms a Raspberry Pi into an arcade console. It uses MAME (Multiple Arcade Machine Emulator) and a custom front-end for intuitive navigation and gameplay using an arcade stick. Designed for quick boot-up, offline use, and ease of play, PixelRunner delivers a nostalgic gaming experience powered by modern hardware.
+    </p>
+  </section>
+
+  <section id="features">
+    <img src="https://tinypic.host/images/2025/06/09/keyfeatures.png" alt="Key Features" class="section-image-right" />
+    <ul>
+      <li>Custom front-end launches on Raspberry Pi boot</li>
+      <li>Arcade stick controls game navigation and launching</li>
+      <li>ROM files automatically detected and categorized</li>
+      <li>Supports metadata display and genre filtering</li>
+      <li>Designed for offline use and ease of setup</li>
+    </ul>
+  </section>
+
+  <section id="components">
+    <img src="https://tinypic.host/images/2025/06/09/components.png" alt="Required Components" class="section-image-left" />
+    <ul>
+      <li>Raspberry Pi 4 (or other version)</li>
+      <li>Arcade Stick (or other gaming controller)</li>
+      <li>USB-C power supply</li>
+      <li>Micro HDMI cable</li>
+      <li>MicroSD card</li>
+      <li>USB data stick</li>
+    </ul>
+  </section>
+
+  <section id="team">
+    <img src="https://tinypic.host/images/2025/06/09/teammembers.png" alt="Team Members" class="section-image-right" />
+    <ul>
+      <li>Chris Cleare</li>
+      <li>Pat Harris</li>
+      <li>Liz Ryan</li>
+      <li>Desirae Sanderson</li>
+    </ul>
+  </section>
+
+  <section id="more-info">
+    <h2>Want to Learn More?</h2>
+    <p>If you're interested in the full technical documentation, setup steps, and background behind this project, visit our project README on GitHub:</p>
+    <p class="readme-link">
+      👉 <a href="https://github.com/navalpostgraduateschool/SE4003_SP25/tree/4aff3efd9241ef0d3e710d0ee859184335358857/pixelrunner" target="_blank">View Our GitHub README</a>
+    </p>
+  </section>
+</body>
+</html>
