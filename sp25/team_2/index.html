@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SpyberryPi Project</title>
+<style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      color: #333;
+      padding: 20px;
+      max-width: 800px;
+      margin: auto;
+    }
+    h1, h2 {
+      color: #2c3e50;
+    }
+    section {
+      margin-bottom: 40px;
+    }
+    .sprint {
+      background-color: #ffffff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    .image {
+      text-align: center;
+      margin-top: 20px;
+    }
+    .image img {
+      max-width: 100%;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    .caption {
+      font-size: 0.9em;
+      color: #666;
+      margin-top: 5px;
+    }
+</style>
+</head>
+<body>
+<h1>SpyberryPi: Motion-Activated Video Surveillance System</h1>
+ 
+  <section>
+<h2>Introduction</h2>
+<p>Our project team set out to create a motion-activated surveillance system using a Raspberry Pi, a webcam, and a motion sensor. The goal was to configure the system so it would only record video when motion was detected, storing the footage locally. We followed an Agile-inspired approach, organizing our efforts into sprints to focus on iterative progress and testing.</p>
+</section>
+ 
+  <section class="sprint">
+<h2>Sprint 1: Acquiring Hardware</h2>
+<ol>
+<li>Went to NPS RoboDojo to explore hardware options</li>
+<li>Practiced with the Raspberry Pi in their lab</li>
+<li>Acquired our own Raspberry Pi</li>
+<li>Purchased a compatible webcam, motion sensor, and SD card via Amazon and the NEX</li>
+</ol>
+<p><strong>Background:</strong> We started our project by visiting the NPS RoboDojo, which provided an opportunity to explore different Raspberry Pi configurations and get familiar with the hardware. While the RoboDojo allowed us to practice with their Raspberry Pis, they didn’t have the additional peripherals we needed. We decided to purchase the remaining components — a compatible webcam, motion sensor, and SD card — from Amazon and the Naval Exchange (NEX) so we could continue development independently.</p>
+</section>
+ 
+  <section class="sprint">
+<h2>Sprint 2: Software Setup and Initial Testing</h2>
+<ol>
+<li>Downloaded Raspberry Pi OS from the official website</li>
+<li>Flashed the OS onto the SD card</li>
+<li>Installed MotionEye surveillance software</li>
+<li>Connected and tested the webcam with Raspberry Pi</li>
+<li>Wired and tested the motion sensor</li>
+</ol>
+<p><strong>Background:</strong> We downloaded the latest Raspberry Pi OS and installed it onto our SD card. We then installed the MotionEye package, an open-source surveillance software that enables video streaming and motion-triggered recording. This phase involved a lot of troubleshooting: from getting the webcam to be recognized by the system, to calibrating the motion sensor’s sensitivity.</p>
+</section>
+ 
+  <section class="sprint">
+<h2>Sprint 3: Integration and File Storage</h2>
+<ol>
+<li>Configured MotionEye to trigger recording on motion detection</li>
+<li>Set recording duration to 10 seconds per trigger</li>
+<li>Tested file saving paths to local SD card</li>
+<li>Attempted to save to USB drive (unsuccessful)</li>
+</ol>
+<p><strong>Background:</strong> We set up the system to record 10-second clips when motion was detected, saving them to the SD card. We tried to redirect the storage to a USB drive, but due to mounting issues and compatibility concerns, that didn't work. Still, we had a functional motion-activated recording system by the end of the sprint.</p>
+</section>
+ 
+  <section>
+<h2>Project Images</h2>
+<div class="image">
+<img src="SpyberryPi Front.jpeg" alt="SpyberryPi Front View">
+<div class="caption">Front view of the SpyberryPi: webcam and motion sensor setup</div>
+</div>
+<div class="image">
+<img src="SpyberryPi Back.jpeg" alt="SpyberryPi Back View">
+<div class="caption">Back view of the SpyberryPi: internal wiring and Raspberry Pi board</div>
+</div>
+</section>
+</body>
+</html>
